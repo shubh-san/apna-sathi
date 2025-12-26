@@ -1,1 +1,1 @@
-# This is my first project and its still going on.
+# This is my first project and its still improving.
