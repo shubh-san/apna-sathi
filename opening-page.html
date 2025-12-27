@@ -5,9 +5,15 @@
       APNA SATHI
     </title>
     <style>
+      .html,body{
+        height: 100%;
+        margin: 0;
+      }
       body {
         font-family: Arial, sans-serif;
-         background-color: lightblue;
+         background-color: rgb(18, 18, 18);
+         display: flex;
+         flex-direction: column;
       }
       h1,
       h3 {
@@ -66,15 +72,31 @@
       line-height: 1.6;
     }
     .button-ch{
-      display: block;
-      margin: 40px auto;
-      font-size: large;
+      font-size: 16px;
       letter-spacing: 1px;
-      background-color: #3193dd;
-      border-radius: 2px;
-      border: solid;
+      padding: 12px 36px;
+      background-color: #4ca0e1;
+      border-radius: 4px;
+      border: 2px solid #2c79b7;
       color: rgb(0, 0, 0);
+       cursor: pointer;
     }
+    .login-button{
+     padding: 40px 0;
+      background-color:#3e4245;
+     flex-grow: 1;
+      width: 100%;
+      text-align: center;
+      
+    }
+    .login-button p {
+      text-align: left;
+      line-height: 1.6;
+      padding: 10px;
+     
+    }
+    
+
     </style>
   </head>
   <body>
@@ -150,7 +172,14 @@
     </div>
     </div>
     <br><br>
-    <a href="login.html"><button class="button-ch">Login</button></a>
-   <br><br>
+    <div class="login-button">
+      <a href="login.html"><button class="button-ch">Login</button></a>
+      <br><br>
+      <hr color="black">
+      <p>Site Rules Privacy : Policy User <br> Agreement : Accessibility</p>
+      <hr color="black">
+      <b>Apna-Sathi, Inc. © 2025. All rights reserved.</b>
+    </div>
+  
   </body>
 </html>
