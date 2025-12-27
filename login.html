@@ -8,8 +8,19 @@
         justify-content: center;
         align-items: center;
         margin: 0;
-        background-color: #0e0e0e;
+        background: radial-gradient(circle at top, #2b2e33,#0b0c0f);
+
+        position: relative;
+        overflow: hidden;
         
+      }
+      body::before{
+        content: "";
+        position: absolute;
+        inset: 0;
+        background-image: url("https://www.transparenttextures.com/patterns/asfalt-dark.png");
+        opacity: 0.25;
+        pointer-events: none;
       }
       .access{
         text-align: center;
@@ -25,25 +36,40 @@
         width: 220px;
         margin: 3px auto;
         padding: 5px;
-box-shadow: 0 4px 10px;
+/* box-shadow: 0 4px 10px; */
       }
      
       .access input[type="submit"]{
-      background-color: rgb(255, 255, 255);
-      border: solid;
+        border: none;
+      background-color: rgb(68, 164, 238);
+      color: white;
       margin-top: 20px;
       cursor: pointer;
-      font-size: 12px;
+      font-size: 15px;
+      }
+      .container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;
+      }
+      .container b{
+        color: white;
+        font-size: large;
+        font-style: normal;
       }
     </style>
   </head>
   <body>
+    <div class="container">
+   <b>LOGIN</b>
 <form action="apna-sathi.html" method="get" class="access">
       <input type="text" placeholder="email id" required>
       <br>
       <input type="password" placeholder="password" required>
       <br>
       <input type="submit" value="submit">
-    </form>
+    </form> 
+  </div>
   </body>
 </html>
